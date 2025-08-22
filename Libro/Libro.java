@@ -4,9 +4,9 @@ public class Libro {
     private final String Titolo;
     private final String Autore;
     private final String CodISBN;
-    private final String Genere;
-    private final int Valutazione;
-    private final StatoLettura SL;
+    private String Genere;
+    private int Valutazione;
+    private StatoLettura SL;
 
     private Libro(Builder builder){
         this.Titolo = builder.titolo;
@@ -17,7 +17,7 @@ public class Libro {
         this.SL = builder.sl;
     }
 
-    public static final class Builder{
+    public static class Builder{
         private final String titolo;
         private final String autore;
         private final String codISBN;
@@ -38,15 +38,18 @@ public class Libro {
             this.codISBN = codISBN;
         }
 
-        public void setGenere(String genere) { this.genere = genere;}
-        public void setSl(StatoLettura sl) { this.sl = sl;}
-        public void setValutazione(int valutazione) { this.valutazione = valutazione;}
+        public Builder setGenere(String genere) { this.genere = genere; return this;}
+        public Builder setSl(StatoLettura sl) { this.sl = sl; return this;}
+        public Builder setValutazione(int valutazione) { this.valutazione = valutazione; return this;}
 
         public Libro build(){
             return new Libro(this);
         }
     }
 
+    public void setGenere(String gen) { this.Genere = gen;}
+    public void setSL(StatoLettura stato){ this.SL = stato;}
+    public void setValutazione(int val){ this.Valutazione = val;}
     public String getTitolo() { return Titolo;}
     public String getAutore() { return Autore;}
     public String getCodISBN() { return CodISBN;}
