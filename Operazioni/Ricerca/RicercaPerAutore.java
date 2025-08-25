@@ -14,8 +14,9 @@ public class RicercaPerAutore implements Ricerca{
 
     @Override
     public List<Libro> ricerca(List<Libro> libri) {
-            return libri.stream()
-                    .filter(libro -> libro.getAutore().toLowerCase().contains(Autore))
-                    .collect(Collectors.toList());
+        String q = Autore.toLowerCase().trim();
+        return libri.stream()
+                .filter(libro -> libro.getAutore().toLowerCase().trim().contains(q))
+                .collect(Collectors.toList());
     }
 }

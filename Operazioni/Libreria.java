@@ -64,4 +64,15 @@ public class Libreria {
         }
     }
 
+    public List<Libro> filtra(ContestoFiltra contesto) {
+        return contesto.filtra(libri);
+    }
+
+    public List<Libro> ordina(ContestoOrdina contesto) {
+        return contesto.ordina(libri);
+    }
+
+    public List<Libro> ricerca(ContestoRicerca contesto) {
+        return contesto.ricerca(libri);
+    }
 }

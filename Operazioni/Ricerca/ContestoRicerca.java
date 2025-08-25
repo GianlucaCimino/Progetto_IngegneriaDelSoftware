@@ -11,7 +11,7 @@ public class ContestoRicerca {
         this.strategia = strategia;
     }
 
-    public List<Libro> ordina(List<Libro> libri) {
+    public List<Libro> ricerca(List<Libro> libri) {
         if (strategia != null) {
             return strategia.ricerca(libri);
         }
