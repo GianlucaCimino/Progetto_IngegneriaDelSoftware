@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class Libreria {
-    private final List<Libro> libri = new ArrayList<Libro>();
+    private List<Libro> libri = new ArrayList<Libro>();
     private ContestoOrdina contestoOrdina = new ContestoOrdina();
     private ContestoFiltra contestoFiltra = new ContestoFiltra();
     private ContestoRicerca contestoRicerca = new ContestoRicerca();
@@ -36,6 +36,8 @@ public class Libreria {
     public List<Libro> getLibri(){
         return Collections.unmodifiableList(libri);
     }
+
+    public void setLibri(List<Libro> NuoviLibri) { if(NuoviLibri != null) libri = new ArrayList<Libro>(NuoviLibri);}
 
     public void modificaPerGenere(String ISBN, String Genere){
         for(Libro libro : libri){
