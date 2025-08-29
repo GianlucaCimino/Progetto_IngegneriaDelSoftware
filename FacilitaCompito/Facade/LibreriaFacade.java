@@ -3,6 +3,7 @@ package FacilitaCompito.Facade;
 import GestioneFile.ContestoGestioneFile;
 import GestioneFile.GestioneFileJSON;
 import Libro.Libro;
+import Libro.StatoLettura;
 import Operazioni.Filtra.ContestoFiltra;
 import Operazioni.Filtra.FiltraPerAutore;
 import Operazioni.Filtra.FiltraPerGenere;
@@ -90,5 +91,17 @@ public class LibreriaFacade {
 
     public void rimuoviLibro(String ISBN){
         libri.rimuoviLibro(ISBN);
+    }
+
+    public void modificaPerGenere(String ISBN, String Genere){
+        libri.modificaPerGenere(ISBN,Genere);
+    }
+
+    public void modificaPerStatoLettura(String ISBN, StatoLettura SL){
+        libri.modificaPerStatoLettura(ISBN,SL);
+    }
+
+    public void modificaPerValutazione(String ISBN, int Valutazione){
+        libri.modificaPerValutazione(ISBN,Valutazione);
     }
 }
