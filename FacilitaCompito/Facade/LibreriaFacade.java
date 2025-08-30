@@ -1,5 +1,7 @@
 package FacilitaCompito.Facade;
 
+import FacilitaCompito.Observer.Observer;
+import FacilitaCompito.Observer.Subject;
 import GestioneFile.ContestoGestioneFile;
 import GestioneFile.GestioneFileJSON;
 import Libro.Libro;
@@ -18,14 +20,32 @@ import Operazioni.Ricerca.RicercaPerAutore;
 import Operazioni.Ricerca.RicercaPerISBN;
 import org.junit.platform.engine.support.hierarchical.ThrowableCollector;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public class LibreriaFacade {
+public class LibreriaFacade implements Subject {
     ContestoRicerca contestoRic = new ContestoRicerca();
     ContestoOrdina contestoOrd = new ContestoOrdina();
     ContestoFiltra contestoFil = new ContestoFiltra();
     ContestoGestioneFile contestoGes = new ContestoGestioneFile(null);
     Libreria libri = new Libreria();
+    private List<Observer> obs = new ArrayList<>();
+
+    @Override
+    public void attach(Observer o) {
+        obs.add(o);
+    }
+
+    @Override
+    public void detach(Observer o) {
+        obs.remove(o);
+    }
+
+    @Override
+    public void notifyObservers() {
+        for (Observer o: obs)
+            o.update(new ArrayList<Libro>(libri.getLibri()));
+    }
 
     public List<Libro> FiltraPerAutore(List<Libro> libreria, String Autore){
         contestoFil.setStrategia(new FiltraPerAutore(Autore));
@@ -74,7 +94,9 @@ public class LibreriaFacade {
 
     public List<Libro> CaricaLibri(String NomeFile){
         contestoGes.setStrategy(new GestioneFileJSON());
-        return contestoGes.carica(NomeFile);
+        List<Libro> caricati = contestoGes.carica(NomeFile);
+        notifyObservers();
+        return caricati;
     }
 
     public List<Libro> getLibri(){
@@ -83,6 +105,7 @@ public class LibreriaFacade {
 
     public void aggiungiLibro(Libro libro){
         libri.aggiungiLibro(libro);
+        notifyObservers();
     }
 
     public void setLibri(List<Libro> nuoviLibri){
@@ -91,17 +114,21 @@ public class LibreriaFacade {
 
     public void rimuoviLibro(String ISBN){
         libri.rimuoviLibro(ISBN);
+        notifyObservers();
     }
 
     public void modificaPerGenere(String ISBN, String Genere){
         libri.modificaPerGenere(ISBN,Genere);
+        notifyObservers();
     }
 
     public void modificaPerStatoLettura(String ISBN, StatoLettura SL){
         libri.modificaPerStatoLettura(ISBN,SL);
+        notifyObservers();
     }
 
     public void modificaPerValutazione(String ISBN, int Valutazione){
         libri.modificaPerValutazione(ISBN,Valutazione);
+        notifyObservers();
     }
 }

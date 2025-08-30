@@ -21,8 +21,8 @@ public class Libro {
         private final String titolo;
         private final String autore;
         private final String codISBN;
-        private String genere;
-        private int valutazione;
+        private String genere = "Romanzo";
+        private int valutazione = 1;
         private StatoLettura sl = StatoLettura.DA_LEGGERE;
 
         public Builder(String titolo, String autore, String codISBN){

@@ -16,7 +16,7 @@ public class FiltraPerGenere implements Filtra {
     public List<Libro> filtra(List<Libro> libri) {
         if (genere == null) throw new IllegalArgumentException("Genere inesistente!");
         return libri.stream()
-                .filter(l -> l.getGenere() == genere)
+                .filter(l -> l.getGenere().equalsIgnoreCase(genere))
                 .collect(Collectors.toList());
     }
 }

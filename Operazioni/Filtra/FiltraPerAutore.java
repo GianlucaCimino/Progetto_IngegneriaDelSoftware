@@ -16,7 +16,7 @@ public class FiltraPerAutore implements Filtra {
     public List<Libro> filtra(List<Libro> libri) {
         if (autore == null) throw new IllegalArgumentException("Autore inesistente!");
         return libri.stream()
-                .filter(l -> l.getAutore() == autore)
+                .filter(l -> l.getAutore().equalsIgnoreCase(autore))
                 .collect(Collectors.toList());
     }
 }
