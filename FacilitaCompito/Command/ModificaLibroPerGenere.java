@@ -9,7 +9,8 @@ public class ModificaLibroPerGenere implements Command{
     private String Genere;
     private String GenereRimosso;
 
-    public ModificaLibroPerGenere(String isbn, String genere){
+    public ModificaLibroPerGenere(LibreriaFacade facade, String isbn, String genere){
+        this.Facade = facade;
         this.Genere = genere;
         this.ISBN = isbn;
     }
@@ -17,9 +18,10 @@ public class ModificaLibroPerGenere implements Command{
     @Override
     public void execute() {
         for (Libro libro: Facade.getLibri()){
-            if(libro.getCodISBN().equals(ISBN))
+            if(libro.getCodISBN().equals(ISBN)) {
                 GenereRimosso = libro.getGenere();
-            break;
+                break;
+            }
         }
         Facade.modificaPerGenere(ISBN,Genere);
     }

@@ -19,11 +19,15 @@ public class CaricaLibriCommand implements Command{
     @Override
     public void execute() {
         StatoPrecedente = new ArrayList<Libro>(Facade.getLibri());
-        Facade.CaricaLibri(NomeFile);
+        List<Libro> Caricati = Facade.CaricaLibri(NomeFile);
+        if(Caricati != null){
+            Facade.setLibri(Caricati);
+        }
     }
 
     @Override
     public void undo() {
-        Facade.setLibri(StatoPrecedente);
+        if(StatoPrecedente != null)
+            Facade.setLibri(StatoPrecedente);
     }
 }

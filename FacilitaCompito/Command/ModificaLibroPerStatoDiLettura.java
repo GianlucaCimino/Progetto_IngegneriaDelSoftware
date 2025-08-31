@@ -10,7 +10,8 @@ public class ModificaLibroPerStatoDiLettura implements Command{
     private StatoLettura SL;
     private StatoLettura SLRimosso;
 
-    public ModificaLibroPerStatoDiLettura(String isbn, StatoLettura sl){
+    public ModificaLibroPerStatoDiLettura(LibreriaFacade facade,String isbn, StatoLettura sl){
+        this.Facade = facade;
         this.SL = sl;
         this.ISBN = isbn;
     }
@@ -18,9 +19,10 @@ public class ModificaLibroPerStatoDiLettura implements Command{
     @Override
     public void execute() {
         for (Libro libro: Facade.getLibri()){
-            if(libro.getCodISBN().equals(ISBN))
+            if(libro.getCodISBN().equals(ISBN)){
                 SLRimosso = libro.getSl();
-            break;
+                break;
+            }
         }
         Facade.modificaPerStatoLettura(ISBN,SL);
     }

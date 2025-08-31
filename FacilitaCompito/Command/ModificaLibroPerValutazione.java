@@ -9,7 +9,8 @@ public class ModificaLibroPerValutazione implements Command{
     private int Valutazione;
     private int ValutazioneRimossa;
 
-    public ModificaLibroPerValutazione(String isbn, int valutazione){
+    public ModificaLibroPerValutazione(LibreriaFacade facade,String isbn, int valutazione){
+        this.Facade = facade;
         this.Valutazione = valutazione;
         this.ISBN = isbn;
     }
@@ -17,9 +18,10 @@ public class ModificaLibroPerValutazione implements Command{
     @Override
     public void execute() {
         for (Libro libro: Facade.getLibri()){
-            if(libro.getCodISBN().equals(ISBN))
+            if(libro.getCodISBN().equals(ISBN)) {
                 ValutazioneRimossa = libro.getValutazione();
-            break;
+                break;
+            }
         }
         Facade.modificaPerValutazione(ISBN,Valutazione);
     }

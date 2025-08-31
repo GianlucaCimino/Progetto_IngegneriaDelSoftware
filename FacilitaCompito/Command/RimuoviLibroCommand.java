@@ -17,9 +17,10 @@ public class RimuoviLibroCommand implements Command{
     public void execute() {
         LibroRimosso = null;
         for (Libro libro: Facade.getLibri()){
-            if(libro.getCodISBN().equals(ISBN))
+            if(libro.getCodISBN().equals(ISBN)) {
                 LibroRimosso = libro;
-            break;
+                break;
+            }
         }
         Facade.rimuoviLibro(ISBN);
     }
