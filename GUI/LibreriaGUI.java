@@ -18,6 +18,7 @@ public class LibreriaGUI extends JFrame implements Observer {
     private LibreriaFacade Facade;
     private JTable table;
     private DefaultTableModel tableModel;
+    private boolean CreataInterfaccia = false;
 
     public LibreriaGUI(LibreriaFacade facade){
         this.Facade = facade;
@@ -67,6 +68,7 @@ public class LibreriaGUI extends JFrame implements Observer {
             if(GesCom.esisteStorico()){
                 GesCom.undoCommand();
                 update(Facade.getLibri());
+                ControllaLibreriaVuota();
             }
             else{
                 JOptionPane.showMessageDialog(this, "Nessuna azione da annullare!");
@@ -91,7 +93,6 @@ public class LibreriaGUI extends JFrame implements Observer {
         int Risultato = Caricato.showOpenDialog(this);
         if (Risultato == JFileChooser.APPROVE_OPTION){
             File file = Caricato.getSelectedFile();
-
             try{
                 GesCom.executeCommand(new CaricaLibriCommand(Facade, file.getAbsolutePath()));
                 update(Facade.getLibri());
@@ -337,6 +338,7 @@ public class LibreriaGUI extends JFrame implements Observer {
                                 String gen = (String) Gen.getSelectedItem();
                                 GesCom.executeCommand(new ModificaLibroPerGenere(Facade,isbn,gen));
                                 update(Facade.getLibri());
+                                JOptionPane.showMessageDialog(this, "Libro modificato correttamente.");
                                 break;
                             }catch (IllegalArgumentException e) {
                                 JOptionPane.showMessageDialog(this,e.getMessage(), "Errore! Libro non riconosciuto.", JOptionPane.ERROR_MESSAGE);
@@ -356,6 +358,7 @@ public class LibreriaGUI extends JFrame implements Observer {
                                 int val = (Integer) Val.getSelectedItem();
                                 GesCom.executeCommand(new ModificaLibroPerValutazione(Facade,isbn,val));
                                 update(Facade.getLibri());
+                                JOptionPane.showMessageDialog(this, "Libro modificato correttamente.");
                                 break;
                             }catch (IllegalArgumentException e) {
                                 JOptionPane.showMessageDialog(this,e.getMessage(), "Errore! Libro non riconosciuto.", JOptionPane.ERROR_MESSAGE);
@@ -375,6 +378,7 @@ public class LibreriaGUI extends JFrame implements Observer {
                                 StatoLettura sl = StatoLettura.valueOf((String) SL.getSelectedItem());
                                 GesCom.executeCommand(new ModificaLibroPerStatoDiLettura(Facade,isbn,sl));
                                 update(Facade.getLibri());
+                                JOptionPane.showMessageDialog(this, "Libro modificato correttamente.");
                                 break;
                             }catch (IllegalArgumentException e) {
                                 JOptionPane.showMessageDialog(this,e.getMessage(), "Errore! Libro non riconosciuto.", JOptionPane.ERROR_MESSAGE);
@@ -406,8 +410,10 @@ public class LibreriaGUI extends JFrame implements Observer {
 
                 for(Libro l: Facade.getLibri()){
                     if (l.getCodISBN().equals(isbn)) {
+                        JOptionPane.showMessageDialog(this, "Libro rimosso correttamente.");
                         GesCom.executeCommand(new RimuoviLibroCommand(Facade,isbn));
                         update(Facade.getLibri());
+                        ControllaLibreriaVuota();
                         break;
                     }
                 }
@@ -462,6 +468,7 @@ public class LibreriaGUI extends JFrame implements Observer {
 
                 GesCom.executeCommand(new AggiungiLibroCommand(Facade,LibroDaAggiungere));
                 update(Facade.getLibri());
+                JOptionPane.showMessageDialog(this, "Libro aggiunto correttamente.");
 
             } catch (IllegalArgumentException e) {
                 JOptionPane.showMessageDialog(this,e.getMessage(), "Errore! Libro non riconosciuto.", JOptionPane.ERROR_MESSAGE);
@@ -485,10 +492,39 @@ public class LibreriaGUI extends JFrame implements Observer {
         }
     }
 
+    private void ControllaLibreriaVuota(){
+        if(Facade.getLibri().isEmpty()){
+            String[] scelte = {"Carica Libreria", "Aggiungi Libro"};
+            JComboBox<String> scelta = new JComboBox<>(scelte);
+
+            Object[] Compilati = {
+                    "Come la vuoi popolare?", scelta
+            };
+
+            int Risultato = JOptionPane.showConfirmDialog(this, Compilati, "La tua libreria è vuota!", JOptionPane.OK_CANCEL_OPTION);
+
+            if (Risultato == JOptionPane.OK_OPTION) {
+                String opzione = scelta.getSelectedItem().toString();
+                try {
+                    if (opzione.equals("Carica Libreria")) {
+                        AzioneBottoreCarica();
+                    }
+                    else if(opzione.equals("Aggiungi Libro"))
+                        AzioneBottoneAggiungi();
+                } catch (IllegalArgumentException e) {
+                    JOptionPane.showMessageDialog(this, e.getMessage(), "Errore!", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             LibreriaFacade facade = new LibreriaFacade();
-            new LibreriaGUI(facade).setVisible(true);
+            LibreriaGUI gui = new LibreriaGUI(facade);
+            gui.setVisible(true);
+
+            gui.ControllaLibreriaVuota();
         });
     }
 }

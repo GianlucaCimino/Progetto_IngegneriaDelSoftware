@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5de91d0f-8750-406a-82d6-4e0e06e68ecb" name="Changes" comment="Problema nel caricamento dell' interfaccia Command, segue push manuale.">
+      <change afterPath="$PROJECT_DIR$/Test/TestParametrizzati.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GUI/LibreriaGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/LibreriaGUI.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GianlucaCimino&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/GianlucaCimino/Progetto_IngegneriaDelSoftware.git&quot;,
+    &quot;accountId&quot;: &quot;a2e83392-cc4f-4ed9-a95e-37b8cd9c0631&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="31rfdm1xUugBebmM88gyn6tbnX2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.LibreriaGUI.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestParametrizzati.OrdinaPerTitolo (1).executor": "Run",
+    "JUnit.TestParametrizzati.OrdinaPerTitolo.executor": "Run",
+    "JUnit.TestParametrizzati.TestFiltraPerGenere.executor": "Run",
+    "JUnit.TestParametrizzati.TestRicercaPerAutore.executor": "Run",
+    "JUnit.TestParametrizzati.testModifiche.executor": "Run",
+    "JUnit.TestSalvataggioECaricamento.TestCaricamento.executor": "Run",
+    "JUnit.TestSalvataggioECaricamento.TestSalva_Carica.executor": "Run",
+    "JUnit.TestSalvataggioECaricamento.TestSalvataggio.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "onboarding.tips.debug.path": "C:/Users/gcimi/OneDrive/Desktop/Progetto_IngegneriaDelSoftware/untitled/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RunManager" selected="Application.LibreriaGUI">
+    <configuration name="LibreriaGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI.LibreriaGUI" />
+      <module name="Progetto_IngegneriaDelSoftware" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$USER_HOME$/.jdks/openjdk-24.0.2+12-54" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestSalvataggioECaricamento" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParametrizzati.OrdinaPerTitolo (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Progetto_IngegneriaDelSoftware" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestParametrizzati" />
+      <option name="METHOD_NAME" value="OrdinaPerTitolo(boolean,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParametrizzati.OrdinaPerTitolo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Progetto_IngegneriaDelSoftware" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestParametrizzati" />
+      <option name="METHOD_NAME" value="OrdinaPerTitolo(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParametrizzati.TestFiltraPerGenere" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Progetto_IngegneriaDelSoftware" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestParametrizzati" />
+      <option name="METHOD_NAME" value="TestFiltraPerGenere(java.lang.String,int)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestParametrizzati.testModifiche" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Progetto_IngegneriaDelSoftware" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.TestParametrizzati" />
+      <option name="METHOD_NAME" value="testModifiche(java.lang.String,java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.LibreriaGUI" />
+      <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo" />
+      <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo (1)" />
+      <item itemvalue="JUnit.TestParametrizzati.TestFiltraPerGenere" />
+      <item itemvalue="JUnit.TestParametrizzati.testModifiche" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.LibreriaGUI" />
+        <item itemvalue="JUnit.TestParametrizzati.testModifiche" />
+        <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo (1)" />
+        <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo" />
+        <item itemvalue="JUnit.TestParametrizzati.TestFiltraPerGenere" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5de91d0f-8750-406a-82d6-4e0e06e68ecb" name="Changes" comment="" />
+      <created>1756287202464</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1756287202464</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Ho cambiato il nome del Progetto da Prova a Progetto_IngegneriaDelSoftware, quindi ho appostato diverse modifiche al package.&#10;Inoltre ho rivisto la parte del salvataggio e del caricamento in JSON e ne ho testato l'utilizzo.">
+      <option name="closed" value="true" />
+      <created>1756290105029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1756290105029</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Creazione della LibreriaFacade, che attraverso il pattern Facede ci permette di facilitare la gestione delle classi e i metodi in Operazioni.&#10;Adattamento di Libreria e creazione di diverse classi che permettono di gestire la possibilità di tornare indietro dopo aver fatto un operazione, grazie all'ausilio del patter Command.">
+      <option name="closed" value="true" />
+      <created>1756311656160</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1756311656160</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Aggiornamento Package Command con le classi Modifica.">
+      <option name="closed" value="true" />
+      <created>1756465058698</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1756465058698</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Creazione di un interfaccia grafica, grazie all'ausilio del pattern Observer e a diversi comandi della libreria Swing di Java.">
+      <option name="closed" value="true" />
+      <created>1756564346858</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1756564346858</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Creazione di un interfaccia grafica, grazie all'ausilio del pattern Observer e a diversi comandi della libreria Swing di Java.">
+      <option name="closed" value="true" />
+      <created>1756564481778</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756564481778</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Creazione di un interfaccia grafica, grazie all'ausilio del pattern Observer e a diversi comandi della libreria Swing di Java.">
+      <option name="closed" value="true" />
+      <created>1756564585625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756564585626</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Aggiunto bottone indietro nella GUI e sistemata la sintassi delle classi contenute in Command, affinchè tutto funzionasse correttamente.">
+      <option name="closed" value="true" />
+      <created>1756635914725</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1756635914725</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Problema nel caricamento dell' interfaccia Command, segue push manuale.">
+      <option name="closed" value="true" />
+      <created>1756636431140</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756636431141</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Ho cambiato il nome del Progetto da Prova a Progetto_IngegneriaDelSoftware, quindi ho appostato diverse modifiche al package.&#10;Inoltre ho rivisto la parte del salvataggio e del caricamento in JSON e ne ho testato l'utilizzo." />
+    <MESSAGE value="Creazione della LibreriaFacade, che attraverso il pattern Facede ci permette di facilitare la gestione delle classi e i metodi in Operazioni.&#10;Adattamento di Libreria e creazione di diverse classi che permettono di gestire la possibilità di tornare indietro dopo aver fatto un operazione, grazie all'ausilio del patter Command." />
+    <MESSAGE value="Aggiornamento Package Command con le classi Modifica." />
+    <MESSAGE value="Creazione di un interfaccia grafica, grazie all'ausilio del pattern Observer e a diversi comandi della libreria Swing di Java." />
+    <MESSAGE value="Aggiunto bottone indietro nella GUI e sistemata la sintassi delle classi contenute in Command, affinchè tutto funzionasse correttamente." />
+    <MESSAGE value="Problema nel caricamento dell' interfaccia Command, segue push manuale." />
+    <option name="LAST_COMMIT_MESSAGE" value="Problema nel caricamento dell' interfaccia Command, segue push manuale." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/untitled/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

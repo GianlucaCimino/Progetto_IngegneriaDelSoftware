@@ -1,0 +1,114 @@
+[
+  {
+    "Titolo": "Piccolo Principe",
+    "Autore": "Antoine de Saint-Exupéry",
+    "Codice ISBN": "987123645",
+    "Genere": "Romanzo",
+    "Valutazione": 3,
+    "Stato di lettura": "IN_LETTURA"
+  },
+  {
+    "Titolo": "Il nome della rosa",
+    "Autore": "U. Eco",
+    "Codice ISBN": "123123123",
+    "Genere": "Romanzo",
+    "Valutazione": 5,
+    "Stato di lettura": "LETTO"
+  },
+  {
+    "Titolo": "Harry Potter e la pietra filosofale",
+    "Autore": "J. K. Rowling",
+    "Codice ISBN": "421522257",
+    "Genere": "Fantasy",
+    "Valutazione": 1,
+    "Stato di lettura": "DA_LEGGERE"
+  },
+  {
+    "Titolo": "Harry Potter e il calice di fuoco",
+    "Autore": "J. K. Rowling",
+    "Codice ISBN": "875924553",
+    "Genere": "Fantasy",
+    "Valutazione": 3,
+    "Stato di lettura": "IN_LETTURA"
+  },
+  {
+    "Titolo": "Baudolino",
+    "Autore": "U. Eco",
+    "Codice ISBN": "745762157",
+    "Genere": "Romanzo",
+    "Valutazione": 1,
+    "Stato di lettura": "DA_LEGGERE"
+  },
+  {
+    "Titolo": "Promessi Sposi",
+    "Autore": "A. Manzoni",
+    "Codice ISBN": "123456789",
+    "Genere": "Romanzo",
+    "Valutazione": 2,
+    "Stato di lettura": "LETTO"
+  },
+  {
+    "Titolo": "La divina commedia",
+    "Autore": "D. Alighieri",
+    "Codice ISBN": "846257913",
+    "Genere": "Romanzo",
+    "Valutazione": 3,
+    "Stato di lettura": "IN_LETTURA"
+  },
+  {
+    "Titolo": "Dieci piccoli indiani",
+    "Autore": "Agatha Christie",
+    "Codice ISBN": "978880470",
+    "Genere": "Giallo",
+    "Valutazione": 5,
+    "Stato di lettura": "LETTO"
+  },
+  {
+    "Titolo": "IT",
+    "Autore": "Stephen King",
+    "Codice ISBN": "804668234",
+    "Genere": "Horror",
+    "Valutazione": 4,
+    "Stato di lettura": "IN_LETTURA"
+  },
+  {
+    "Titolo": "Il signore degli anelli",
+    "Autore": "J.R.R. Tolkien",
+    "Codice ISBN": "424668388",
+    "Genere": "Fantasy",
+    "Valutazione": 2,
+    "Stato di lettura": "IN_LETTURA"
+  },
+  {
+    "Titolo": "L'isola del tesoro",
+    "Autore": "Robert Louis Stevenson",
+    "Codice ISBN": "721494604",
+    "Genere": "Avventura",
+    "Valutazione": 1,
+    "Stato di lettura": "DA_LEGGERE"
+  },
+  {
+    "Titolo": "La solitudine dei numeri primi",
+    "Autore": "Paolo Giordano",
+    "Codice ISBN": "974590184",
+    "Genere": "Narrativo",
+    "Valutazione": 3,
+    "Stato di lettura": "LETTO"
+  },
+  {
+    "Titolo": "Dracula",
+    "Autore": "Bram Stoker",
+    "Codice ISBN": "994681776",
+    "Genere": "Horror",
+    "Valutazione": 1,
+    "Stato di lettura": "DA_LEGGERE"
+  },
+  {
+    "Titolo": "Il codice da Vinci",
+    "Autore": "Dan Brown",
+    "Codice ISBN": "111505515",
+    "Genere": "Giallo",
+    "Valutazione": 4,
+    "Stato di lettura": "LETTO"
+  }
+]
