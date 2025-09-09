@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Progetto_IngegneriaDelSoftware:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5de91d0f-8750-406a-82d6-4e0e06e68ecb" name="Changes" comment="Problema nel caricamento dell' interfaccia Command, segue push manuale.">
-      <change afterPath="$PROJECT_DIR$/Test/TestParametrizzati.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GUI/LibreriaGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/GUI/LibreriaGUI.java" afterDir="false" />
+    <list default="true" id="5de91d0f-8750-406a-82d6-4e0e06e68ecb" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/Progetto_IngegneriaDelSoftware_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Progetto_IngegneriaDelSoftware/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Progetto_IngegneriaDelSoftware/.idea/Prova.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +59,7 @@
   "keyToString": {
     "Application.LibreriaGUI.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JAR Application.Progetto_IngegneriaDelSoftware.jar.executor": "Run",
     "JUnit.TestParametrizzati.OrdinaPerTitolo (1).executor": "Run",
     "JUnit.TestParametrizzati.OrdinaPerTitolo.executor": "Run",
     "JUnit.TestParametrizzati.TestFiltraPerGenere.executor": "Run",
@@ -63,17 +73,18 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "onboarding.tips.debug.path": "C:/Users/gcimi/OneDrive/Desktop/Progetto_IngegneriaDelSoftware/untitled/src/Main.java",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.LibreriaGUI">
+  <component name="RunManager" selected="JAR Application.Progetto_IngegneriaDelSoftware.jar">
     <configuration name="LibreriaGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="GUI.LibreriaGUI" />
       <module name="Progetto_IngegneriaDelSoftware" />
@@ -127,22 +138,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestParametrizzati.TestFiltraPerGenere" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Progetto_IngegneriaDelSoftware" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestParametrizzati" />
-      <option name="METHOD_NAME" value="TestFiltraPerGenere(java.lang.String,int)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestParametrizzati.testModifiche" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Progetto_IngegneriaDelSoftware" />
       <extension name="coverage">
@@ -159,21 +154,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Progetto_IngegneriaDelSoftware.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/Progetto_IngegneriaDelSoftware_jar/Progetto_IngegneriaDelSoftware.jar" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.Unnamed" />
       <item itemvalue="Application.LibreriaGUI" />
+      <item itemvalue="JAR Application.Progetto_IngegneriaDelSoftware.jar" />
       <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo" />
       <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo (1)" />
-      <item itemvalue="JUnit.TestParametrizzati.TestFiltraPerGenere" />
       <item itemvalue="JUnit.TestParametrizzati.testModifiche" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.Progetto_IngegneriaDelSoftware.jar" />
         <item itemvalue="Application.LibreriaGUI" />
         <item itemvalue="JUnit.TestParametrizzati.testModifiche" />
         <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo (1)" />
         <item itemvalue="JUnit.TestParametrizzati.OrdinaPerTitolo" />
-        <item itemvalue="JUnit.TestParametrizzati.TestFiltraPerGenere" />
       </list>
     </recent_temporary>
   </component>
